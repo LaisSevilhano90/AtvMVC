@@ -11,11 +11,9 @@
 <body>
     <nav>
         <a asp-controller="Home" asp-action="Index">Início</a>
-        <a asp-controller="Home" asp-action="Sobre">Sobre</a>
-        <a asp-controller="Home" asp-action="Saudacao">Saudação</a>
-        <a asp-controller="Eventos" asp-action="Index">Evento</a>
+        <a asp-controller="Eventos" asp-action="Index">Listagem de Eventos</a>
         <a asp-controller="Eventos" asp-action="Criar">Novo Evento</a>
-        <a asp-controller="Eventos" asp-action="Buscar">Buscar</a> // falta fz
+        <a asp-controller="Eventos" asp-action="Buscar">Buscar</a> @* falta fz: *@
     </nav>
     <hr />
     @RenderBody()

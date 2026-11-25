@@ -20,7 +20,7 @@ namespace SistemaGerenciamentoEventos.Models
         public string Local { get; set; }
         public DateTime DataEvento { get; set; }
 
-        [StringLength(1000, MinimumLength = 1, ErrorMessage = "Nome deve ter entre 5 e 80 caracteres.")]
+        [Range(1, 1000, ErrorMessage = "No mínimo 1 vaga e o max 1000")]
         public int QntdVagas { get; set; }
         public decimal ValorIngresso { get; set; }
     }

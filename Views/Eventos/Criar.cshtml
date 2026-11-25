@@ -26,17 +26,17 @@
     </p>
     <p>
         <label asp-for="DataEvento"></label>
-        <input asp-for="DataEvento">
+        <input asp-for="DataEvento" type="date" >
         <span asp-validation-for="DataEvento" class = "erro"></span>
     </p>
     <p>
         <label asp-for="QntdVagas"></label>
-        <input asp-for="QntdVagas">
+        <input asp-for="QntdVagas" type="number">
         <span asp-validation-for="QntdVagas" class = "erro"></span>
     </p>
     <p>
         <label asp-for="ValorIngresso"></label>
-        <input asp-for="ValorIngresso">
+        <input asp-for="ValorIngresso" type="number">
         <span asp-validation-for="ValorIngresso" class = "erro"></span>
     </p>
     <button type="submit">Adicionar</button>
